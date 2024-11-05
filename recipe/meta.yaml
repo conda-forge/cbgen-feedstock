@@ -1,5 +1,5 @@
 {% set name = "cbgen" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a9c7e03a3cc06ce64908edc8915f64a1d47912d4d42b8127b5b2afed94885e7c
+  sha256: 7b97f7c21e8b7294d092c6e5a4354c48a8bb256db67b9a5a83db967ff5d2fe1c
 
 build:
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37]
 
 requirements:
@@ -50,7 +50,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Python wrapper around a BGEN library'
+  summary: Python wrapper around a BGEN library
   description: |
     BGEN is a file format for storing large genetic datasets. It supports both unphased
     genotypes and phased haplotype data with variable ploidy and number of alleles. It
