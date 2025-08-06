@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/limix/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 29da2d6a064bd310c77dd537b8e843ee7186919e386cd1ef4747ad29a7201d99
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: edcf856c9b0cafae7f6e999ed5d08aacdf1e09dadec766b79990fe5861e8cf7e
 
 build:
   number: 0
