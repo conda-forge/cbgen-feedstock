@@ -336,4 +336,5 @@ Feedstock Maintainers
 
 * [@Horta](https://github.com/Horta/)
 * [@danielnachun](https://github.com/danielnachun/)
+* [@jpfeuffer](https://github.com/jpfeuffer/)
 
